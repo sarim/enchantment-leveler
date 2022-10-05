@@ -3,27 +3,23 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Enchantment Leveler",
+  "description": "Adjust enchantment max level",
   "authors": [
-    "Me!"
+    "Sarim Khan"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "me.sarim.example.ExampleMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "enchantment_leveler.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +27,5 @@
     "fabric": "*",
     "minecraft": "~1.19",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
